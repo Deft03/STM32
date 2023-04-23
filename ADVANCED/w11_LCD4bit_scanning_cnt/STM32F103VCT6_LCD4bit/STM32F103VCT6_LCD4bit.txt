@@ -1,0 +1,70 @@
+Configuration	STM32F103VCT6_LCD4bit
+STM32CubeMX 	6.7.0
+Date	04/05/2023
+MCU	STM32F103VCTx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+72	PA13	SYS_JTMS-SWDIO	
+76	PA14	SYS_JTCK-SWCLK	
+81	PD0	GPIO_Output	LCDD4
+82	PD1	GPIO_Output	LCDD5
+83	PD2	GPIO_Output	LCDD6
+84	PD3	GPIO_Output	LCDD7
+85	PD4	GPIO_Output	LCDLED
+86	PD5	GPIO_Output	LCDE
+87	PD6	GPIO_Output	LCDRW
+88	PD7	GPIO_Output	LCDRS
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+72	PA13	SYS_JTMS-SWDIO	
+76	PA14	SYS_JTCK-SWCLK	
+81	PD0	GPIO_Output	LCDD4
+82	PD1	GPIO_Output	LCDD5
+83	PD2	GPIO_Output	LCDD6
+84	PD3	GPIO_Output	LCDD7
+85	PD4	GPIO_Output	LCDLED
+86	PD5	GPIO_Output	LCDE
+87	PD6	GPIO_Output	LCDRW
+88	PD7	GPIO_Output	LCDRS
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : STM32F103VCT6_LCD4bit
+Project Folder : Y:\COURSE - THUCTAP VI DIEU KHIEN ARM\STM32F103VCT6_LCD4bit
+Toolchain / IDE : MDK-ARM V5.32
+Firmware Package Name and Version : STM32Cube FW_F1 V1.8.4
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : Yes
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+

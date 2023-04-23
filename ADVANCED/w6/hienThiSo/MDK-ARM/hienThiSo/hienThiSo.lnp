@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"hienthiso\startup_stm32f103xb.o"
+"hienthiso\main.o"
+"hienthiso\stm32f1xx_it.o"
+"hienthiso\stm32f1xx_hal_msp.o"
+"hienthiso\stm32f1xx_hal_gpio_ex.o"
+"hienthiso\stm32f1xx_hal_tim.o"
+"hienthiso\stm32f1xx_hal_tim_ex.o"
+"hienthiso\stm32f1xx_hal.o"
+"hienthiso\stm32f1xx_hal_rcc.o"
+"hienthiso\stm32f1xx_hal_rcc_ex.o"
+"hienthiso\stm32f1xx_hal_gpio.o"
+"hienthiso\stm32f1xx_hal_dma.o"
+"hienthiso\stm32f1xx_hal_cortex.o"
+"hienthiso\stm32f1xx_hal_pwr.o"
+"hienthiso\stm32f1xx_hal_flash.o"
+"hienthiso\stm32f1xx_hal_flash_ex.o"
+"hienthiso\stm32f1xx_hal_exti.o"
+"hienthiso\system_stm32f1xx.o"
+--strict --scatter "hienThiSo\hienThiSo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "hienThiSo.map" -o hienThiSo\hienThiSo.axf

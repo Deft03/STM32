@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"fixled_nhan\startup_stm32f103xb.o"
+"fixled_nhan\main.o"
+"fixled_nhan\stm32f1xx_it.o"
+"fixled_nhan\stm32f1xx_hal_msp.o"
+"fixled_nhan\stm32f1xx_hal_gpio_ex.o"
+"fixled_nhan\stm32f1xx_hal_tim.o"
+"fixled_nhan\stm32f1xx_hal_tim_ex.o"
+"fixled_nhan\stm32f1xx_hal.o"
+"fixled_nhan\stm32f1xx_hal_rcc.o"
+"fixled_nhan\stm32f1xx_hal_rcc_ex.o"
+"fixled_nhan\stm32f1xx_hal_gpio.o"
+"fixled_nhan\stm32f1xx_hal_dma.o"
+"fixled_nhan\stm32f1xx_hal_cortex.o"
+"fixled_nhan\stm32f1xx_hal_pwr.o"
+"fixled_nhan\stm32f1xx_hal_flash.o"
+"fixled_nhan\stm32f1xx_hal_flash_ex.o"
+"fixled_nhan\stm32f1xx_hal_exti.o"
+"fixled_nhan\system_stm32f1xx.o"
+--strict --scatter "fixled_nhan\fixled_nhan.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "fixled_nhan.map" -o fixled_nhan\fixled_nhan.axf

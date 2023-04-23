@@ -1,0 +1,115 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Nguyen Home, nguyen@live.com, LIC=WHYH9-4Q4Y8-DYAV3-A0VZX-6YJS9-CEVG6
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+\\Mac\WORK\COURSE - THUCTAP VI DIEU KHIEN ARM\LCD_HD44780_Driver01\MDK-ARM\LCD_HD44780_Driver01.uvprojx
+Project File Date:  03/17/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'LCD_HD44780_Driver01'
+assembling startup_stm32f103xb.s...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_msp.c...
+compiling main.c...
+../Core/Src/main.c(117): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(LCDRW_GPIO_Port,LCDRW_Pin,1);
+../Core/Src/main.c(118): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(LCDRS_GPIO_Port,LCDRS_Pin,0);
+../Core/Src/main.c(132): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(LCDRW_GPIO_Port,LCDRW_Pin,0);    // Change back to Write mode
+../Core/Src/main.c(164): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(LCDRS_GPIO_Port,LCDRS_Pin,((PutType==CMD4bit)?CMD:PutType)); // IR
+../Core/Src/main.c(165): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(LCDEN_GPIO_Port,LCDEN_Pin,0); // EN=0
+../Core/Src/main.c(166): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(LCDD7_GPIO_Port,LCDD7_Pin,(ch>>7)&1u); 
+../Core/Src/main.c(167): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(LCDD6_GPIO_Port,LCDD6_Pin,(ch>>6)&1u);
+../Core/Src/main.c(168): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(LCDD5_GPIO_Port,LCDD5_Pin,(ch>>5)&1u);
+../Core/Src/main.c(169): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(LCDD4_GPIO_Port,LCDD4_Pin,(ch>>4)&1u);
+../Core/Src/main.c(170): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(LCDEN_GPIO_Port,LCDEN_Pin,1); // EN=1
+../Core/Src/main.c(171): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(LCDEN_GPIO_Port,LCDEN_Pin,0); // EN=0
+../Core/Src/main.c(175): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(LCDRS_GPIO_Port,LCDRS_Pin,((PutType==CMD4bit)?CMD:PutType)); // IR
+../Core/Src/main.c(176): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(LCDD3_GPIO_Port,LCDD7_Pin,(ch>>3)&1u);
+../Core/Src/main.c(177): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(LCDD2_GPIO_Port,LCDD6_Pin,(ch>>2)&1u);
+../Core/Src/main.c(178): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(LCDD1_GPIO_Port,LCDD5_Pin,(ch>>1)&1u);
+../Core/Src/main.c(179): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(LCDD0_GPIO_Port,LCDD4_Pin,(ch>>0)&1u);
+../Core/Src/main.c(180): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(LCDEN_GPIO_Port,LCDEN_Pin,1); // EN=1	
+../Core/Src/main.c(181): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(LCDEN_GPIO_Port,LCDEN_Pin,0); // EN=0
+../Core/Src/main.c: 18 warnings, 0 errors
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_hal_exti.c...
+linking...
+Program Size: Code=3588 RO-data=308 RW-data=16 ZI-data=1632  
+FromELF: creating hex file...
+"LCD_HD44780_Driver01\LCD_HD44780_Driver01.axf" - 0 Error(s), 18 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_LCD_HD44780_Driver01
+  C:\Users\Win10\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\Win10\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>

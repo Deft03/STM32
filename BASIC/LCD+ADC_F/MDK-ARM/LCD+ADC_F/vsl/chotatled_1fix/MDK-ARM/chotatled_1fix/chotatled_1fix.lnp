@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"chotatled_1fix\startup_stm32f103xb.o"
+"chotatled_1fix\main.o"
+"chotatled_1fix\stm32f1xx_it.o"
+"chotatled_1fix\stm32f1xx_hal_msp.o"
+"chotatled_1fix\stm32f1xx_hal_gpio_ex.o"
+"chotatled_1fix\stm32f1xx_hal_tim.o"
+"chotatled_1fix\stm32f1xx_hal_tim_ex.o"
+"chotatled_1fix\stm32f1xx_hal.o"
+"chotatled_1fix\stm32f1xx_hal_rcc.o"
+"chotatled_1fix\stm32f1xx_hal_rcc_ex.o"
+"chotatled_1fix\stm32f1xx_hal_gpio.o"
+"chotatled_1fix\stm32f1xx_hal_dma.o"
+"chotatled_1fix\stm32f1xx_hal_cortex.o"
+"chotatled_1fix\stm32f1xx_hal_pwr.o"
+"chotatled_1fix\stm32f1xx_hal_flash.o"
+"chotatled_1fix\stm32f1xx_hal_flash_ex.o"
+"chotatled_1fix\stm32f1xx_hal_exti.o"
+"chotatled_1fix\system_stm32f1xx.o"
+--strict --scatter "chotatled_1fix\chotatled_1fix.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "chotatled_1fix.map" -o chotatled_1fix\chotatled_1fix.axf

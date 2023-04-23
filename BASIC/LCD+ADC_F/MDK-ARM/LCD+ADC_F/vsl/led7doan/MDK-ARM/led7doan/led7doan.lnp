@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"led7doan\startup_stm32f103xb.o"
+"led7doan\led7.o"
+"led7doan\main.o"
+"led7doan\stm32f1xx_it.o"
+"led7doan\stm32f1xx_hal_msp.o"
+"led7doan\stm32f1xx_hal_gpio_ex.o"
+"led7doan\stm32f1xx_hal_tim.o"
+"led7doan\stm32f1xx_hal_tim_ex.o"
+"led7doan\stm32f1xx_hal.o"
+"led7doan\stm32f1xx_hal_rcc.o"
+"led7doan\stm32f1xx_hal_rcc_ex.o"
+"led7doan\stm32f1xx_hal_gpio.o"
+"led7doan\stm32f1xx_hal_dma.o"
+"led7doan\stm32f1xx_hal_cortex.o"
+"led7doan\stm32f1xx_hal_pwr.o"
+"led7doan\stm32f1xx_hal_flash.o"
+"led7doan\stm32f1xx_hal_flash_ex.o"
+"led7doan\stm32f1xx_hal_exti.o"
+"led7doan\system_stm32f1xx.o"
+--strict --scatter "led7doan\led7doan.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "led7doan.map" -o led7doan\led7doan.axf

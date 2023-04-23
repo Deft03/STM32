@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"taykhinen_bai9\startup_stm32f205xx.o"
+"taykhinen_bai9\main.o"
+"taykhinen_bai9\stm32f2xx_it.o"
+"taykhinen_bai9\stm32f2xx_hal_msp.o"
+"taykhinen_bai9\stm32f2xx_hal_tim.o"
+"taykhinen_bai9\stm32f2xx_hal_tim_ex.o"
+"taykhinen_bai9\stm32f2xx_hal.o"
+"taykhinen_bai9\stm32f2xx_hal_rcc.o"
+"taykhinen_bai9\stm32f2xx_hal_rcc_ex.o"
+"taykhinen_bai9\stm32f2xx_hal_cortex.o"
+"taykhinen_bai9\stm32f2xx_hal_flash.o"
+"taykhinen_bai9\stm32f2xx_hal_flash_ex.o"
+"taykhinen_bai9\stm32f2xx_hal_pwr.o"
+"taykhinen_bai9\stm32f2xx_hal_pwr_ex.o"
+"taykhinen_bai9\stm32f2xx_hal_gpio.o"
+"taykhinen_bai9\stm32f2xx_hal_dma.o"
+"taykhinen_bai9\stm32f2xx_hal_dma_ex.o"
+"taykhinen_bai9\stm32f2xx_hal_exti.o"
+"taykhinen_bai9\system_stm32f2xx.o"
+--strict --scatter "TayKhiNen_Bai9\TayKhiNen_Bai9.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TayKhiNen_Bai9.map" -o TayKhiNen_Bai9\TayKhiNen_Bai9.axf

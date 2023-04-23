@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"lcd+adc_f\startup_stm32f103xb.o"
+"lcd+adc_f\clcd.o"
+"lcd+adc_f\main.o"
+"lcd+adc_f\stm32f1xx_it.o"
+"lcd+adc_f\stm32f1xx_hal_msp.o"
+"lcd+adc_f\stm32f1xx_hal_gpio_ex.o"
+"lcd+adc_f\stm32f1xx_hal_adc.o"
+"lcd+adc_f\stm32f1xx_hal_adc_ex.o"
+"lcd+adc_f\stm32f1xx_hal.o"
+"lcd+adc_f\stm32f1xx_hal_rcc.o"
+"lcd+adc_f\stm32f1xx_hal_rcc_ex.o"
+"lcd+adc_f\stm32f1xx_hal_gpio.o"
+"lcd+adc_f\stm32f1xx_hal_dma.o"
+"lcd+adc_f\stm32f1xx_hal_cortex.o"
+"lcd+adc_f\stm32f1xx_hal_pwr.o"
+"lcd+adc_f\stm32f1xx_hal_flash.o"
+"lcd+adc_f\stm32f1xx_hal_flash_ex.o"
+"lcd+adc_f\stm32f1xx_hal_exti.o"
+"lcd+adc_f\stm32f1xx_hal_tim.o"
+"lcd+adc_f\stm32f1xx_hal_tim_ex.o"
+"lcd+adc_f\system_stm32f1xx.o"
+--strict --scatter "LCD+ADC_F\LCD+ADC_F.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LCD+ADC_F.map" -o LCD+ADC_F\LCD+ADC_F.axf
